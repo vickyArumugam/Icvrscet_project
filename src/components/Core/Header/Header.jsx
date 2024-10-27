@@ -10,16 +10,21 @@ const Header = () => {
   const handleMouseLeave = () => {
     setOpenDropdown(null);
   };
+  // const aboutCom =() => {
+  //   <Link to="/conference_tracks"></Link>
+  //   console.log("click");
+    
+  // }
 
   return (
     <nav className='flex justify-between my-2 max-w-[80rem] mx-auto py-4  '>
       <div className='w-60 h-16 hover:opacity-50'>
-        <img src="public\images\cropped-ICVRSCET-1.png" alt='log' />
+        <img src="\images\cropped-ICVRSCET-1.png" alt='log' />
       </div>
       <div className='content-center'>
         <ul className='flex gap-9 text-white'>
           <li className=' hover:text-red-600 text-14'>
-            <a href="#">HOME</a>
+            <a href="">HOME</a>
           </li>
           <li
             className='relative flex  hover:text-red-600 text-14'
@@ -33,8 +38,8 @@ const Header = () => {
             {openDropdown === 'about' && (
               <div className='absolute bg-white text-black mt-10 p-4 w-44 text-base border-t-4 border-yellow-400'>
                 <ul onMouseLeave={handleMouseLeave} className='text-left'>
-                  <li><a href="" className='block py-1 uppercase hover:bg-slate-300 border-b-1 text-sm'>earlier conferences</a>
-                  {/* <Link to="/about"></Link> */}
+                  <li><a href="/about_Location/" className='block py-1 uppercase hover:bg-slate-300 border-b-1 text-sm'>earlier conferences</a>
+                 
                   </li>
                   <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>about the conference</a></li>
                   <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>scope of conference</a></li>

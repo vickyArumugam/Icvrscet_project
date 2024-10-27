@@ -6,12 +6,12 @@ import AppRouter from './Router/AppRouter'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <div>
-       <Home />
-       {/* <AppRouter/> */}
+    <div className="bg-[url('public/images/002051.jpg')] bg-cover bg-fixed bg-center">
+      
+       <AppRouter/>
     </div>
   )
 }

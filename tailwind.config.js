@@ -8,6 +8,7 @@ export default {
     extend: {
       backgroundImage: {
         'homepage': "url('src\images\home-bg.jpg')",
+        
       },
       borderWidth: {
         DEFAULT: '1px',
@@ -21,7 +22,9 @@ export default {
       },
       colors: {
         'custom-yellow': '#ffb135',
-        'btn-bg':'#ff9d00'
+        'btn-bg':'#ff9d00',
+        'about-text-col':'#7f0b28',
+        'about-footer':'#ffbf35',
       },
       backgroundColor: {
         'footer-bg':'#1b1b1b;',
@@ -35,15 +38,28 @@ export default {
       fontFamily: {
         'Helvetica': ['Helvetica', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
-        'montserrat-subrayada': ['"Montserrat Subrayada"', 'sans-serif'],
+        'montserrat-subrayada': ['Montserrat Subrayada', 'Sans-serif'],
       },
       fontSize: {
         '14':'14px',
         '20':'20px',
+        '23':'23px',
         '29':'29px',
+        '40': '40px',
+        '44': '44px',
         '54': '54px',
         '50': '50px',
-        '40': '40px',
+        '85':'85px',
+      },
+      letterSpacing: {
+       'latter-spacing':'12px',
+      },
+      height:{
+        '1':'1px',
+        '340':'340px',
+        '400':'400px',
+        '460':'460px',
+
       },
       animation: {
         'fade-up': 'fadeUp 0.5s ease-in-out forwards',
