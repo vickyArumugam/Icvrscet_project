@@ -25,6 +25,7 @@ export default {
         'btn-bg':'#ff9d00',
         'about-text-col':'#7f0b28',
         'about-footer':'#ffbf35',
+        'box-editiorial':'#4054b2'
       },
       backgroundColor: {
         'footer-bg':'#1b1b1b;',
@@ -39,11 +40,14 @@ export default {
         'Helvetica': ['Helvetica', 'sans-serif'],
         'roboto': ['Roboto', 'sans-serif'],
         'montserrat-subrayada': ['Montserrat Subrayada', 'Sans-serif'],
+        'Trebuchet':['Trebuchet MS','Tahoma, sans-serif']
       },
       fontSize: {
         '14':'14px',
+        '19':'19px',
         '20':'20px',
         '23':'23px',
+        '25':'25px',
         '29':'29px',
         '40': '40px',
         '44': '44px',
@@ -59,10 +63,11 @@ export default {
         '340':'340px',
         '400':'400px',
         '460':'460px',
+        '600':'600px',
 
       },
       animation: {
-        'fade-up': 'fadeUp 0.5s ease-in-out forwards',
+        'fade-up': 'fadeUp 1s ease-in-out forwards',
       },
       keyframes: {
         fadeUp: {

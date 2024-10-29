@@ -9,4 +9,7 @@ padding: 0;
 height: 100vh; 
 width: 100%;
 } */
+ body ::selection {
+    background-color: grey;
+ }
 

@@ -1,7 +1,9 @@
-import React from 'react'
-import Header from '../Core/Header/Header'
+// import React from 'react';
+import Header from '../Core/Header/Header';
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
+
     return (
         <>
             <section className="w-full h-screen relative ">
@@ -14,7 +16,8 @@ const Home = () => {
                         </span>
                         <h2 className='text-50 font-medium font-Helvetica'>26<sup>th</sup>April, 2024</h2>
                         <h1 className='text-50  mb-4 font-bold font-Helvetica'>ICVRSCET - 2024 (Hybrid)</h1>
-                        <button className='uppercase w-52 h-12 mb-60 bg-btn-bg border-1 font-medium border-white hover:bg-red-900 animate-fade-up'>Register here</button>
+                        <button className='uppercase w-52 h-12 mb-60 bg-btn-bg border-1 font-medium border-white hover:bg-red-900 animate-fade-up' onClic
+                        k={alert}>Register here</button>
                     </div>
                 </div>
             </section>
@@ -130,14 +133,6 @@ const Home = () => {
                         <hr className='w-56 h-1 bg-white border-0 my-2'></hr>
                         <h1 className='text-center font-roboto text-20'>Secretary & Correspondent</h1>
                     </div>
-
-                    {/*<div className="w-[480px] h-80 flex flex-col justify-center items-center rounded-xl bg-white border shadow-sm bg-[url('public/images/002051.jpg')] bg-fill">
-      <img src="public/images/chair.png" className='' alt="Chair" />
-      <h1 className='text-2xl text-center font-bold'>Tmt. Vijaya Muthuvannan</h1>
-      <hr className='w-2/4 border-gray-500 my-5'></hr>
-      <h1 className='text-center'>Former Chairperson</h1>
-    </div>  */}
-                    {/* </div> */}
                 </div>
             </section>
             <section className='flex justify-center items-center gap-3 my-24 '>
@@ -193,7 +188,7 @@ const Home = () => {
                 </div>
             </section>
             <section className='mt-10'>
-                <div className='flex justify-center items-center gap-5'>
+                <div className='flex justify-center items-center gap-8'>
                     <img src="public\images\facebook_5968764 (1).png" alt='facebook-icon' className='transform transition-transform duration-200 hover:scale-110' />
                     <img src="public\images\twitter_3955031.png" alt="twitter-icon" className='transform transition-transform duration-200 hover:scale-110' />
                     <img src="public\images\instagram_1384015.png" alt="insta-icon" className='transform transition-transform duration-200 hover:scale-110' />

@@ -10,21 +10,18 @@ const Header = () => {
   const handleMouseLeave = () => {
     setOpenDropdown(null);
   };
-  // const aboutCom =() => {
-  //   <Link to="/conference_tracks"></Link>
-  //   console.log("click");
-    
-  // }
+
 
   return (
     <nav className='flex justify-between my-2 max-w-[80rem] mx-auto py-4  '>
+      
       <div className='w-60 h-16 hover:opacity-50'>
         <img src="\images\cropped-ICVRSCET-1.png" alt='log' />
       </div>
       <div className='content-center'>
         <ul className='flex gap-9 text-white'>
           <li className=' hover:text-red-600 text-14'>
-            <a href="">HOME</a>
+            <a href="/">HOME</a>
           </li>
           <li
             className='relative flex  hover:text-red-600 text-14'
@@ -38,14 +35,12 @@ const Header = () => {
             {openDropdown === 'about' && (
               <div className='absolute bg-white text-black mt-10 p-4 w-44 text-base border-t-4 border-yellow-400'>
                 <ul onMouseLeave={handleMouseLeave} className='text-left'>
-                  <li><a href="/about_Location/" className='block py-1 uppercase hover:bg-slate-300 border-b-1 text-sm'>earlier conferences</a>
-                 
-                  </li>
-                  <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>about the conference</a></li>
-                  <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>scope of conference</a></li>
-                  <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>about vrscet</a></li>
-                  <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>organizing committee</a></li>
-                  <li><a href="" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>editorial board</a></li>
+                  <li><a href="/conference_tracks/" className='block py-1 uppercase hover:bg-slate-300 border-b-1 text-sm'>earlier conferences</a> </li>
+                  <li><a href="/about_conference/" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>about the conference</a></li>
+                  <li><a href="/scope_confer/" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>scope of conference</a></li>
+                  <li><a href="/about_vrscet/" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>about vrscet</a></li>
+                  <li><a href="/organizing_commitee/" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>organizing committee</a></li>
+                  <li><a href="/editiorial_board/" className='block py-1 uppercase  hover:bg-slate-300 border-b-1 text-sm'>editorial board</a></li>
                 </ul>
               </div>
             )}

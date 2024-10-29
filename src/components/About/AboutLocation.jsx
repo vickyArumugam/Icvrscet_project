@@ -1,44 +1,28 @@
 import React from 'react'
+import { FaMapMarkerAlt, FaClock } from 'react-icons/fa';
 
 const AboutLocation = () => {
     return (
-        <div>
-            <section className='min-w-64 mt-10 bg-slate-300 w-full h-460 '>
-                <div className='flex  justify-around g-10 text-center'>
-
-                <div >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-24 h-64 text-center">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                        </svg>
-                        <h1 className='text-23 font-roboto font-bold text-white'>WHERE</h1>
-                        <div>
-                            <h1 className='font-roboto text-20  text-white'>V.R.S. College of Engineering and Technology <br />
-                                Arasur - 607 107 <br />
-                                Villupuram District
-                            </h1>
-                        </div>
-                </div>
-
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-24 h-64">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-                    </svg>
-                    <h1 className='text-23 font-roboto font-bold text-white'>WHEN</h1>
-                    <div>
-                        <h1 className='font-roboto text-20  text-white'>26th April, 2024
-                            <br />
-                            (Friday)
-                        </h1>
-                    </div>
-                </div>
-                </div>
-            </section>
-            <button className='uppercase w-52 h-12 mb-60 bg-red-500 border-1 font-medium border-white hover:bg-btn-bg animate-fade-up'>Register here</button>
-
-
+        <section className="flex flex-col items-center justify-center w-full h-[450px] bg-[url('/images/002051.jpg')] bg-cover bg-fixed bg-center relative">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="relative z-10 flex flex-col items-center text-white">
+        <div className="flex gap-80 mr-32 text-center mt-8">
+          <div className="flex flex-col items-center">
+            <FaMapMarkerAlt className="text-4xl mb-1 w-14 h-14" />
+            <h1 className="uppercase font-semibold t font-roboto text-23 my-6">Where</h1>
+            <p className="font-semibold  font-roboto text-20">V.R.S. College of Engineering and Technology<br />Arasur - 607 107<br />Villupuram District</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaClock className="text-4xl mb-1  w-14 h-14" />
+            <h1 className="uppercase font-semibold text-lg my-6">When</h1>
+            <p className="font-semibold text-base">26<sup>th</sup> April, 2024<br />(Friday)</p>
+          </div>
         </div>
+        <button className="uppercase w-52 h-12 mt-10 bg-red-600 text-white tracking-wide font-medium  hover:bg-btn-bg transition duration-200 ">
+          Register Here
+        </button>
+      </div>
+    </section>
     )
 }
 
